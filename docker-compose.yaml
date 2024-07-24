@@ -9,9 +9,10 @@ services:
     ports:
       - "33600:3306"
     environment:
-      - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=fullcycle
-      - MYSQL_PASSWORD=root
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+      # - MYSQL_ROOT_PASSWORD=root
+      # - MYSQL_PASSWORD=root
       # - MYSQL_DATABASE=fullcycle
       # - MYSQL_ROOT_PASSWORD=root
       # - MYSQL_USER=root
